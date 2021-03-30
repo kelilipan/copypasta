@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ text, ...props }) => {
         {...props}
         onClick={onCopy}
       >
-        <Text noOfLines={5}>{text}</Text>
+        <Text noOfLines={null}>{text}</Text>
       </Box>
     </Tooltip>
   )
