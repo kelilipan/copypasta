@@ -1,9 +1,9 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider, Flex } from '@chakra-ui/react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import theme from '@/theme'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
