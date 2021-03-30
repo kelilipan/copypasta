@@ -1,6 +1,6 @@
 import { CardProps } from '@/types'
 import { useClipboard } from '@chakra-ui/hooks'
-import { Box } from '@chakra-ui/layout'
+import { Box, Text } from '@chakra-ui/layout'
 import { Tooltip } from '@chakra-ui/tooltip'
 import React from 'react'
 
@@ -11,8 +11,15 @@ const Card: React.FC<CardProps> = ({ text, ...props }) => {
       label={hasCopied ? 'Copied' : 'Click to copy!'}
       aria-label='A tooltip'
     >
-      <Box borderRadius='4px' shadow='md' p='4' {...props} onClick={onCopy}>
-        {text}
+      <Box
+        whiteSpace='pre-wrap'
+        borderRadius='4px'
+        shadow='md'
+        p='4'
+        {...props}
+        onClick={onCopy}
+      >
+        <Text noOfLines={5}>{text}</Text>
       </Box>
     </Tooltip>
   )
