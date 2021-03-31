@@ -115,7 +115,7 @@ const DetailModal: React.FC<Props> = ({
               )}
             </Box>
           </Stack>
-          <Text mt='4' noOfLines={2} isTruncated>
+          <Text mt='4'>
             {tags?.map((tag, idx) => {
               return (
                 <Text color='blue.600' as='span' key={idx}>{`#${tag} `}</Text>
