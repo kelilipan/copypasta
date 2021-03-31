@@ -24,9 +24,11 @@ const index: React.FC = () => {
           </Link>
         </Text>
         <SimpleGrid columns={[1, 1, 2, 3]} gap='4'>
-          {data.map(({ text, description, external }, idx) => {
+          {data.map(({ text, description, tags, language, external }, idx) => {
             return (
               <Card
+                tags={tags}
+                language={language}
                 text={text}
                 description={description}
                 external={external}

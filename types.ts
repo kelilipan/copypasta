@@ -1,4 +1,4 @@
-import { BoxProps } from '@chakra-ui/layout'
+import { FlexProps } from '@chakra-ui/layout'
 
 export interface ExternalURL {
   text: string
@@ -7,8 +7,10 @@ export interface ExternalURL {
 
 export interface Copypasta {
   text: string
+  language: string | string[]
+  tags?: string[]
   description?: string
   external?: ExternalURL[]
 }
 
-export interface CardProps extends BoxProps, Copypasta {}
+export interface CardProps extends FlexProps, Copypasta {}
