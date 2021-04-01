@@ -50,7 +50,7 @@ const DetailModal: React.FC<Props> = ({
       initialFocusRef={closeRef}
     >
       <ModalOverlay />
-      <ModalContent minH='50vh'>
+      <ModalContent minH='50vh' borderRadius={[0, 2]}>
         <ModalBody p='4' d='flex' flexDirection='column'>
           <Text whiteSpace='pre-wrap' flex='1'>
             {text}
