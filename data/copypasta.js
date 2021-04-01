@@ -80,5 +80,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH!!!!!!!!!!!!!!!!!!!!!!
     `,
     tags: ['wangy', 'genshin', 'keqing'],
     language: 'id'
+  },
+  {
+    text:
+      'Hai Sobat, ada apa nih dengan layanan IndiHome? Joro bantu cek jaringannya, silakan informasikan nomor internet dan nomor Hp aktif melalui DM. Terima kasih -Joro',
+    tags: ['indihome', 'restart', 'modem'],
+    language: 'id'
   }
 ]
