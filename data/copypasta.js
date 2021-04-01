@@ -69,8 +69,7 @@ export default [
     language: ['en', 'zh']
   },
   {
-    text: `
-    KEQING...... KEQING 📷 📷 📷 WANGY WANGY WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaaah baunya KEQING wangi aku mau nyiumin aroma wanginya KEQING AAAAAAAAH ~~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~ AAAAAH KEQING 📷 📷 📷 manis banget AAAAAAAAH
+    text: `KEQING...... KEQING 📷 📷 📷 WANGY WANGY WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaaah baunya KEQING wangi aku mau nyiumin aroma wanginya KEQING AAAAAAAAH ~~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~ AAAAAH KEQING 📷 📷 📷 manis banget AAAAAAAAH
 
 TATAPAN KEQING BEGITU MENGGODAAAAAAAAA............ GUA RELA JADI BUDAK SIMP HANYA DEMI KEQING TERDJINTA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH
 
