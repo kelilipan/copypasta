@@ -37,7 +37,7 @@ const Card: React.FC<CardProps> = ({
           borderTop='1px solid #eee'
           justifyContent='space-between'
         >
-          <Text noOfLines={2} isTruncated>
+          <Text noOfLines={2}>
             {tags?.map((tag, idx) => {
               return (
                 <Text color='blue.600' as='span' key={idx}>{`#${tag} `}</Text>
