@@ -61,14 +61,19 @@ const index: React.FC = () => {
       pathname: '/'
     })
   }
-
+  const maxW = [null, null, '2xl', '6xl']
   return (
     <>
       <Head>
         <title>Copypasta</title>
       </Head>
-      <Main>
-        <Text fontSize={['sm', 'md']} textAlign='justify'>
+      <Main px='0' pb='12' maxW='unset' alignItems='center'>
+        <Text
+          fontSize={['sm', 'md']}
+          textAlign='justify'
+          p={[4, 2]}
+          maxW={maxW}
+        >
           A copypasta is a block of text which is copied and pasted across the
           Internet by individuals through online forums and social networking
           websites. Copypastas are said to be similar to spam.{' '}
@@ -81,13 +86,14 @@ const index: React.FC = () => {
           </Link>
         </Text>
         <SearchBox
+          p={[4, 2]}
           keyword={keyword}
           handleChange={handleChange}
           handleSubmit={handleSearch}
           handleClear={handleClear}
         />
         {lists?.length ? (
-          <SimpleGrid columns={[1, 1, 2, 3]} gap='4'>
+          <SimpleGrid columns={[1, 1, 2, 3]} gap='4' p={[4, 2]} maxW={maxW}>
             {lists.map(
               ({ text, description, tags, language, external }, idx) => {
                 return (

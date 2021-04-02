@@ -1,6 +1,6 @@
 import { Button, IconButton } from '@chakra-ui/button'
 import { Input, InputGroup, InputRightElement } from '@chakra-ui/input'
-import { Flex, FlexProps } from '@chakra-ui/layout'
+import { Box, Flex, FlexProps } from '@chakra-ui/layout'
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { RiDeleteBack2Fill } from 'react-icons/ri'
@@ -17,34 +17,53 @@ const SearchBox: React.FC<Props> = ({
   keyword,
   ...props
 }) => {
+  const maxW = [null, null, '2xl', '6xl']
   return (
-    <Flex {...props}>
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: 'flex', width: '100%', margin: '0.75rem 0' }}
-      >
-        <InputGroup>
-          <Input
-            mr='2'
-            placeholder='Search copypasta'
-            onChange={handleChange}
-            value={keyword}
-          />
-          <InputRightElement right='10px'>
-            <IconButton
-              onClick={handleClear}
-              size='sm'
-              fontSize='lg'
-              variant='ghost'
-              aria-label='clear search'
-              icon={<RiDeleteBack2Fill />}
+    <Flex
+      pos='sticky'
+      top='0'
+      zIndex='10'
+      w='100%'
+      justifyContent='center'
+      style={{ backdropFilter: 'saturate(180%) blur(10px)' }}
+      {...props}
+    >
+      <Box w='full' maxW={maxW}>
+        <form
+          onSubmit={handleSubmit}
+          style={{ display: 'flex', width: '100%', margin: '0.75rem 0' }}
+        >
+          <InputGroup>
+            <Input
+              variant='filled'
+              bgColor='blackAlpha.50'
+              mr='2'
+              placeholder='Search copypasta'
+              onChange={handleChange}
+              value={keyword}
             />
-          </InputRightElement>
-        </InputGroup>
-        <Button leftIcon={<FaSearch />} type='submit'>
-          Search
-        </Button>
-      </form>
+            <InputRightElement right='10px'>
+              <IconButton
+                onClick={handleClear}
+                size='sm'
+                fontSize='lg'
+                variant='ghost'
+                aria-label='clear search'
+                icon={<RiDeleteBack2Fill />}
+              />
+            </InputRightElement>
+          </InputGroup>
+          <Button
+            colorScheme='whiteAlpha'
+            backgroundColor='blackAlpha.50'
+            color='black'
+            leftIcon={<FaSearch />}
+            type='submit'
+          >
+            Search
+          </Button>
+        </form>
+      </Box>
     </Flex>
   )
 }

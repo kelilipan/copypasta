@@ -8,6 +8,7 @@ const Main: React.FC<StackProps> = ({ children, ...props }) => {
       w='full'
       maxW={[null, null, '2xl', '6xl']}
       px={{ base: 4, md: 2 }}
+      pb='6'
       {...props}
     >
       {children}
