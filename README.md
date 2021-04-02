@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Copypasta - A copypasta archive app
 
-## Getting Started
+<p align="center"><img src="public/logo.png" width="360"></p>
 
-First, run the development server:
+A copypasta is a block of text which is copied and pasted across the Internet by individuals through online forums and social networking websites. Copypastas are said to be similar to spam. [(src:Wikipedia)](https://en.wikipedia.org/wiki/Copypasta#:~:text=A%20copypasta%20is%20a%20block,to%20be%20similar%20to%20spam.).
 
-```bash
+This apps was made to archive [copypasta](https://copypasta.wisesa.dev) and copy/paste copypasta easily 🙃.
+
+# Run development server?
+
+First, install all packages:
+
+```
+yarn install
+#or
+npm install
+```
+
+then, run the development server:
+
+```
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# API Documentation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- GET https://copypasta.wisesa.dev/api/random
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+get random copypasta
 
-## Learn More
+- GET https://copypasta.wisesa.dev/api/all
 
-To learn more about Next.js, take a look at the following resources:
+get all copypasta
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- GET https://copypasta.wisesa.dev/api/{id}
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+get copypasta by idx (see [dataset](data/copypasta.js))
 
-## Deploy on Vercel
+# Contribute?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Wanna add a funny copypasta that you just found on the internet? read our [contribution guide](CONTRIBUTING.md).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Credits
+
+Tools used
+
+- [Next.js](https://nextjs.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [next-pwa](https://github.com/shadowwalker/next-pwa)
+
+# License
+
+[MIT](LICENSE)
