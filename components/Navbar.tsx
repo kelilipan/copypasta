@@ -1,7 +1,8 @@
 import React from 'react'
 import { Box, Flex, Heading } from '@chakra-ui/layout'
-import { Button, Icon } from '@chakra-ui/react'
-import { FaCopy, FaPlusCircle } from 'react-icons/fa'
+import { Icon } from '@chakra-ui/react'
+import { FaCopy } from 'react-icons/fa'
+import InstallPWA from './InstallPWA'
 
 const Navbar: React.FC = () => {
   return (
@@ -19,9 +20,7 @@ const Navbar: React.FC = () => {
         </Heading>
       </Box>
       <Box pos='absolute' top='5' right='2'>
-        <Button size='sm' aria-label='Install App' leftIcon={<FaPlusCircle />}>
-          Install
-        </Button>
+        <InstallPWA />
       </Box>
     </Flex>
   )
