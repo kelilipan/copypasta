@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
     <Box p='2'>
       <Text color='gray.500' fontSize={12}>
         2021 ©
-        <Link href='https://github.com/svspicious' color='gray.500' isExternal>
-          svspicious
+        <Link href='https://github.com/kelilipan' color='gray.500' isExternal>
+          kelilipan
         </Link>
         . All rights reserved.
       </Text>
